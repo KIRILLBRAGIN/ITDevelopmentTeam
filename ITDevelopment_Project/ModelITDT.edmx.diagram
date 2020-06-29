@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="884724f1cc1c47dc8d3e0d9c17eddd2b" Name="Diagram1">
+        <EntityTypeShape EntityType="ITDevelopmentModel.AttedenceSet" Width="1.5" PointX="3" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ITDevelopmentModel.ClientSet" Width="1.5" PointX="0.5" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ITDevelopmentModel.CustomSet" Width="1.5" PointX="5.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ITDevelopmentModel.Departament" Width="1.5" PointX="0.5" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ITDevelopmentModel.FinanceSet" Width="1.5" PointX="7.125" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ITDevelopmentModel.PersonalSet" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ITDevelopmentModel.SeminarsSet" Width="1.5" PointX="7.125" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ITDevelopmentModel.Users" Width="1.5" PointX="11.375" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="ITDevelopmentModel.FK_AttedenceSet_AttedenceSet" ManuallyRouted="false" />
+        <AssociationConnector Association="ITDevelopmentModel.FK_CustomSet_AttedenceSet" ManuallyRouted="false" />
+        <AssociationConnector Association="ITDevelopmentModel.FK_CustomSet_ClientSet" ManuallyRouted="true" >
+          <ConnectorPoint PointX="2" PointY="5.9035953776041659" />
+          <ConnectorPoint PointX="2.2475" PointY="5.9035953776041659" />
+          <ConnectorPoint PointX="2.2475" PointY="6.4417936197916674" />
+          <ConnectorPoint PointX="5.8124994999999995" PointY="6.4417936197916674" />
+          <ConnectorPoint PointX="5.8124994999999995" PointY="4.8744921875" />
+        </AssociationConnector>
+        <AssociationConnector Association="ITDevelopmentModel.FK_CustomSet_Departament" ManuallyRouted="false" />
+        <AssociationConnector Association="ITDevelopmentModel.FK_Departament_PersonalSet" ManuallyRouted="false" />
+        <AssociationConnector Association="ITDevelopmentModel.FK_PersonalSet_PersonalSet" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
